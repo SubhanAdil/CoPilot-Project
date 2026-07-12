@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Dataset Information</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Dataset Uploaded Successfully ✅</h1>
+
+<h2>Total Students</h2>
+
+<h1>{{ total }}</h1>
+
+<h2>Total Columns</h2>
+
+<h1>{{ total_columns }}</h1>
+
+<h2>Columns Found</h2>
+
+<ul>
+
+{% for column in columns %}
+
+<li>{{ column }}</li>
+
+{% endfor %}
+
+</ul>
+
+<br>
+
+<a href="/">
+
+<button>Back Home</button>
+
+</a>
+
+</div>
+
+</body>
+
+</html>

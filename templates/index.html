@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>EduAI CoPilot</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🎓 EduAI CoPilot</h1>
+
+    <h3>AI Powered Student Performance Prediction</h3>
+
+    <div class="cards">
+
+        <div class="card">
+
+            <h2>🧑 Manual Prediction</h2>
+
+            <p>
+                Enter important student details and let AI predict performance.
+            </p>
+
+            <a href="/manual">
+                <button>
+                    Start Prediction
+                </button>
+            </a>
+
+        </div>
+
+        <div class="card">
+
+            <h2>📂 Upload CSV</h2>
+
+            <p>
+                Upload student dataset and analyze the entire class.
+            </p>
+
+            <a href="/upload">
+
+                <button>
+
+                    Upload CSV
+
+                </button>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
